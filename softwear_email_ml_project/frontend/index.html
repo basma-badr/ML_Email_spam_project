@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Spam Detector | Secure Email Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Spam<span>Shield</span></h1>
+            </div>
+            <p class="tagline">AI-Powered Email Security Analysis</p>
+        </header>
+
+        <main class="main-content">
+            <div class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Real-Time Detection</h3>
+                    <p>Instant analysis using advanced machine learning</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>High Accuracy</h3>
+                    <p>Advanced algorithms for reliable results</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Privacy Focused</h3>
+                    <p>Your data is processed securely</p>
+                </div>
+            </div>
+
+            <div class="detector-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Email Content Analyzer</h2>
+                    <p>Paste email content below to check for spam indicators</p>
+                </div>
+
+                <div class="input-area">
+                    <div class="textarea-header">
+                        <span>Email Content</span>
+                        <div class="text-counter">
+                            <span id="charCount">0</span> characters
+                        </div>
+                    </div>
+                    <textarea id="emailText" placeholder="Paste the email content you want to analyze here..."></textarea>
+                </div>
+
+                <button class="detect-btn" onclick="checkSpam()">
+                    <i class="fas fa-search"></i> Analyze for Spam
+                    <div class="btn-pulse"></div>
+                </button>
+
+                <div class="result-container">
+                    <h3><i class="fas fa-poll"></i> Analysis Result</h3>
+                    <div class="result-box">
+                        <div class="result-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="result-content">
+                            <p id="result">Waiting for analysis...</p>
+                            <div class="confidence-meter" id="confidenceMeter">
+                                <div class="meter-bar">
+                                    <div class="meter-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="confidence-text" id="confidenceText">Confidence: --%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-value">Fast</span>
+                        <span class="stat-label">Analysis Speed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">Secure</span>
+                        <span class="stat-label">Data Privacy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">Reliable</span>
+                        <span class="stat-label">Results Quality</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2023 SpamShield | AI-Powered Email Security</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-question-circle"></i> How it works</a>
+                <a href="#"><i class="fas fa-lock"></i> Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
